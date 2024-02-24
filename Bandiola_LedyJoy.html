@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: #9FBB73;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        input[type="text"], input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 15px;
+            background-color: #0e4d10;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="#" method="post">
+
+        <table>
+            <tr>
+                <th>First Name:</th>
+                <td><input type="text" name="firstName" required></td>
+            </tr>
+            <tr>
+                <th>Last Name:</th>
+                <td><input type="text" name="lastName" required></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Date of Birth:</th>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><input type="text" name="address" required></td>
+            </tr>
+            <tr>
+                <th>City:</th>
+                <td><input type="text" name="city" required></td>
+            </tr>
+            <tr>
+                <th>Zip Code:</th>
+                <td><input type="text" name="zipCode" required></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
